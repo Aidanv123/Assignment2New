@@ -1,0 +1,166 @@
+body{
+    padding: 0;
+    margin: 0px;
+    background-color: grey;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: grey;
+    font-family:'Aldrich', sans-serif;
+}
+/*Setting the text to have letter spacing, uppercase and have a fontsize*/
+.logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+.navigationLinks{
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    width: 30%;
+}
+/*Removes the bullet points*/
+.navigationLinks li{
+    list-style: none;
+}
+li a:hover {
+    color: blue;
+}
+.navigationLinks a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*Not displaying burger on desktop view*/
+.burgernav {
+    display: none;
+    cursor: pointer;
+}
+/*Setting size for the burger*/
+.burgernav div{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px
+    
+}
+/* Adding media Queries for the burger for mobile view to make it responsive*/
+@media screen and (max-width:1024px){ /*when its at this size, it hides the burger but displays the normal links*/
+    body{
+        overflow-x: hidden;
+    }
+    .navigationLinks{
+        width: 60px;
+    }
+}
+@media screen and (max-width:768px){ /* When its at this size it displays the hamburger navigation*/
+    .navigationLinks{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.25s ease-in;
+    }
+    .navigationLinks li{
+        opacity: 1;
+    }
+    .burgernav{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+/*Each link fades in slowly, from opacity 0 (Not visible) to opacity 1 (visable)*/
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/*CSS for the Content on index page*/
+.content{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: Poppins;
+}
+.content .p1{
+    text-align: center;
+    font-size: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Poppins;
+}
+/*css for images on index page*/
+/*Social Media Images*/
+footer {
+    text-align: center;
+}
+.imgsocial {
+border-style: none;
+border-radius: 10% 20%; /* Here is use of border radius on the images */
+float: right;  
+}
+.imgindex{
+overflow: hidden;
+border-style: none;
+}
+
+/* My code */
+.imgindex:hover{
+filter: grayscale(1);
+transition: background-size 0.3s ease;
+}
+.imgsocial:hover{
+filter: grayscale(1);
+transition: background-size 0.3s ease;
+}
+
+/*SlideShow CSS*/
+.slideShow-container{
+    position: relative;
+    width: 42%;
+    margin: auto;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.slideShow{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+
