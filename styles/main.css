@@ -135,16 +135,15 @@ li a:hover {
 /*css for images on index page*/
 /*Social Media Images*/
 footer {
+    margin: top;
     text-align: center;
+    padding: 0 40px 40px 40px;
 }
-.imgsocial {
-border-style: none;
-border-radius: 10% 20%; /* Here is use of border radius on the images */
-float: right;  
-}
+
 .imgindex{
 overflow: hidden;
 border-style: none;
+text-align: bottom;
 }
 
 /* My code */
@@ -197,7 +196,6 @@ transition: background-size 0.3s ease;
 }
 .gallery-item{
     max-width: 100%;
-
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: all .3s;
@@ -212,6 +210,13 @@ transition: background-size 0.3s ease;
 }
 .gallery-item:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8)
+}
+img.profile-pic{
+    width: 100%;
+}
+img.profile-pic {
+    border-radius: 20px; /* Code from https://ianrmedia.unl.edu/resources/rounded-corners-image, slightly modified */
+    width: auto;
 }
 
 
