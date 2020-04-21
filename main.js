@@ -36,3 +36,4 @@ carouselSlide.addEventListener('transitionend', ()=>{
         carouselSlide.style.transform = 'translateX(' +(-size * counter)+ 'px)'; //This ensures that the images stay the same size when they change
     }
 });
+
