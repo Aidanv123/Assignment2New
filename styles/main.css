@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 body{/*Basic css for the body variable, found on all pages*/
     padding: 0;
     margin: 0px;
@@ -293,5 +302,25 @@ h2 {
     font-size: 15px;
     text-align: justify;
     text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+h7{
+    color:white;
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 100vh;
 }
 
