@@ -70,7 +70,3 @@ carouselSlide.addEventListener('transitionend', ()=>{
 function emailMe() { //Calls the function created within the HTML
     alert("Email Recieved") //sends an alert saying "Email Recieved" when the button is clicked
 }
-
-
-
-
