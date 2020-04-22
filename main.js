@@ -70,3 +70,26 @@ carouselSlide.addEventListener('transitionend', ()=>{
 function emailMe() { //Calls the function created within the HTML
     alert("Email Recieved") //sends an alert saying "Email Recieved" when the button is clicked
 }
+
+//Real Time Clock JS
+//Code is from https://www.youtube.com/watch?v=C2CrBlGvbEM - Changed variable names and size of text etc.
+//Creating the variables
+function realTimeClock(){
+    var rtClock = new Date();
+    var hours = rtClock.getHours();
+    var minutes = rtClock.getMinutes();
+    var seconds = rtClock.getSeconds();
+
+//Adding AM and PM system
+var amPM = (hours < 12) ? "AM" : "PM";
+//Convert the hours component to a 12hr format
+hours = (hours > 12) ? hours - 12 : hours;
+//Padding the hours, minutes and seconds with leading zeros
+hours = ("0" + hours).slice(-2);
+minutes = ("0" + minutes).slice(-2);
+seconds = ("0" + seconds).slice(-2);
+//Display the clock
+document.getElementById('clock').innerHTML =
+    hours + "  :  " + minutes + "  :  " + seconds + " " + amPM;
+var t = setTimeout(realTimeClock, 500);
+}

@@ -14,7 +14,7 @@
         <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'> 
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     </head>
-    <body>
+    <body onload="realTimeClock()">
         <!--Navigation-->
         <nav>
             <ul class="navigationLinks">
@@ -34,6 +34,8 @@
                     <a href = "#"> Contact </a>
                 </li>
             </ul>
+     
+
         <!--Burger Navigation-->    
         <div class="burgernav">
             <div class="line1"></div>
@@ -41,6 +43,10 @@
             <div class="line3"></div>
         </div>
         </nav>
+        <div class="clockContainer">
+            <div id="clock"></div>
+        </div>
+       
         <div class="contact-content">
             <div>
                 <h1>Here you can contact me!</h1>

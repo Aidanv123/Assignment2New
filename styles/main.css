@@ -294,3 +294,17 @@ h2 {
     text-align: justify;
     text-align:center;
 }
+
+/*CSS for the clock*/
+.clockContainer{
+    width: 100%;
+    position: relative;
+}
+#clock{
+    width: 100%;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+}
