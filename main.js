@@ -1,3 +1,32 @@
+//Hamburger Navigation code from https://www.youtube.com/watch?v=gXkqy0b4M5g - Also for main.css navigation code.
+//Creating a const function called navSlide
+const navSlide = () =>{
+    //creates a read only variable called burger, which links to the .burgernav
+    const burger = document.querySelector('.burgernav');
+    //creates a read only variable called nav, which links to the .navigationLinks
+    const nav = document.querySelector('.navigationLinks');
+    //creates a read only variable called navLinks, which links to the .navigationLinks images
+    const navLinks = document.querySelectorAll('.navigationLinks li');
+
+    // Toggles the const nav when clicked
+    burger.addEventListener('click',()=>{
+        nav.classList.toggle('nav-active');
+    //Animate links //For each link we run a function, which is why we have used querySelectorAll, to use all images
+    navLinks.forEach((link, index)=>{
+        if(link.style.animation){
+            link.style.animation=''
+        } else{
+        link.style.animation = `navLinkFade 0.5s ease forwards $(index / 7 + 0.3)s`;//Here is where it does the actual animation
+        }
+    });
+    //Burger animation
+    burger.classList.toggle('toggle');
+});
+  
+}
+//Then the function navSlide is ran, which was first created
+navSlide();
+
 //Guide for code from https://www.youtube.com/watch?v=KcdBOoK3Pfw - Changed variable names, ease in and out speed, CSS sizes changed, different images etc.
 const carouselSlide = document.querySelector('.slideShow'); //Creates a read only variable for the class slideShow
 const carouselImages = document.querySelectorAll('.slideShow img');//Creates a read only variable for the images within class Slideshow
@@ -36,4 +65,12 @@ carouselSlide.addEventListener('transitionend', ()=>{
         carouselSlide.style.transform = 'translateX(' +(-size * counter)+ 'px)'; //This ensures that the images stay the same size when they change
     }
 });
+
+//Adding a message function when clicking 'Contact Me'
+function emailMe() { //Calls the function created within the HTML
+    alert("Email Recieved") //sends an alert saying "Email Recieved" when the button is clicked
+}
+
+
+
 

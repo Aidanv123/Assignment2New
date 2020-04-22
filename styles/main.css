@@ -1,4 +1,4 @@
-body{
+body{/*Basic css for the body variable, found on all pages*/
     padding: 0;
     margin: 0px;
     background-color: grey;
@@ -6,7 +6,7 @@ body{
     box-sizing: border-box;
 }
 
-nav{
+nav{ /*CSS for the navigation container, found on all pages*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,19 +21,22 @@ nav{
     letter-spacing: 5px;
     font-size: 22px;
 }
+/*The CSS for the links themselves - found on all pages*/
 .navigationLinks{
     display: flex;
     justify-content: space-around;
     z-index: 1;
     width: 30%;
 }
-/*Removes the bullet points*/
+/*Removes the bullet points from the navigation - found on all pages*/
 .navigationLinks li{
     list-style: none;
 }
+/*Setting a hover colour to blue when links are hovered over - found on all pages*/
 li a:hover {
     color: blue;
 }
+/*setting the css for the text of the links, sets there colour, letter spacing and font size and weight - found on all pages*/
 .navigationLinks a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -41,12 +44,12 @@ li a:hover {
     font-weight: bold;
     font-size: 20px;
 }
-/*Not displaying burger on desktop view*/
+/*Not displaying burger on desktop view - found on all pages*/
 .burgernav {
     display: none;
     cursor: pointer;
 }
-/*Setting size for the burger*/
+/*Setting size for the burger - found on all pages*/
 .burgernav div{
     width: 25px;
     height: 2px;
@@ -54,7 +57,7 @@ li a:hover {
     margin: 5px
     
 }
-/* Adding media Queries for the burger for mobile view to make it responsive*/
+/* Adding media Queries for the burger for mobile view to make it responsive - found on all pages*/
 @media screen and (max-width:1024px){ /*when its at this size, it hides the burger but displays the normal links*/
     body{
         overflow-x: hidden;
@@ -63,7 +66,7 @@ li a:hover {
         width: 60px;
     }
 }
-@media screen and (max-width:768px){ /* When its at this size it displays the hamburger navigation*/
+@media screen and (max-width:768px){ /* When its at this size it displays the hamburger navigation along with the other tweaks to the navigation e.g. opacity - found on all pages*/
     .navigationLinks{
         position: absolute;
         right: 0px;
@@ -98,6 +101,7 @@ li a:hover {
         transform: translateX(0px);
     }
 }
+/*Setting the rotation of the burger lines when the burger is clicked - found on all pages*/
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -132,14 +136,14 @@ li a:hover {
     margin-bottom: 20px;
     font-family: Poppins;
 }
-/*css for images on index page*/
+
 /*Social Media Images*/
 footer {
     margin: top;
     text-align: center;
     padding: 0 40px 40px 40px;
 }
-
+/*css for images on index page*/
 .imgindex{
 overflow: hidden;
 border-style: none;
@@ -147,6 +151,7 @@ text-align: bottom;
 }
 
 /* My code */
+/*Creating a grayscale feature when images are hovered over*/
 .imgindex:hover{
 filter: grayscale(1);
 transition: background-size 0.3s ease;
@@ -157,6 +162,7 @@ transition: background-size 0.3s ease;
 }
 
 /*SlideShow CSS*/
+/*Setting the size of the slideShow container - Index Page*/
 .slideShow-container{
     position: relative;
     width: 42%;
@@ -164,7 +170,7 @@ transition: background-size 0.3s ease;
     border: 5px solid black;
     overflow: hidden;
 }
-
+/*Setting the size of the slideshow itself - Index Page*/
 .slideShow{
     display: flex;
     width: 100%;
@@ -175,7 +181,7 @@ transition: background-size 0.3s ease;
 .content-portfolio {
     padding-bottom: 40px;
 }
-
+/*Setting the text size for the gallery-items - Portfolio Page*/
 .gallery-item .h1{
     text-align: center;
     font-size: 22px;
@@ -184,6 +190,7 @@ transition: background-size 0.3s ease;
     margin-bottom: 20px;
     font-family: Poppins;
 }
+/*Setting the size of the gallery container - Portfolio page*/
 .gallery-container  {
     margin: 20px auto;
     width:400px;
@@ -194,14 +201,16 @@ transition: background-size 0.3s ease;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
+/*Setting the size for the actual gallery items -Portfolio Page*/
 .gallery-item{
+    position: relative;
     max-width: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: all .3s;
     
 }
-
+/*Setting hover features for the gallery items, includes box shadow, grayscale etc. - Portfolio Page*/
 .gallery-item.hover .image {
     filter: grayscale(1);
 } 
@@ -218,7 +227,71 @@ img.profile-pic {
     border-radius: 20px; /* Code from https://ianrmedia.unl.edu/resources/rounded-corners-image, slightly modified */
     width: auto;
 }
+/*CV page CSS*/
+/*Setting the text size, font and colours on the CV page*/
+h2 {
+    font-family: 'Poppins';
+    font-size: 50px; 
+    overflow: hidden;
+    color: black;
+    text-align: center;
+}
 
+.container {
+    display: flex;
+}
+/*Setting the text size, font and colours on the CV page*/
+.container h3  {
+    margin: 0;    
+    padding: 40px;
+    width: 30%;
+    min-width: 300px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: Poppins;
+}
+/*Setting the text size, font and colours on the CV page*/
+.container h4 {
+    margin: 0;
+    padding: 40px;
+    max-width: 70%;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Poppins;
+}
+/*Setting the text size, font and colours on the CV page*/
+.container h4 p {
+    margin: 0;
+    font-family: Poppins;
+}
+/*Contact Page CSS*/
+/*Setting the container CSS styles - Contact page*/
+.contact-content {
+    font-family: 'Poppins';
+    font-size: 25px; 
+    overflow: hidden;
+    color: black;
+    text-align: center;
+}
 
-
+.contact-content {
+    text-align: center;
+    padding: 0 40px 40px 40px;
+}
+/*aligning everything within a div to the center -Contact page*/
+.contact-content div {
+    text-align: center;
+    max-width: 750px;
+    display: inline-block;
+}
+/*Setting the size for all <p> related text - contact page*/
+.contact-content p {
+    font-size: 15px;
+    text-align: justify;
+    text-align:center;
+}
 
