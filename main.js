@@ -22,10 +22,10 @@ const navSlide = () =>{
     //Burger animation
     burger.classList.toggle('toggle');
 });
-  
-}
-//Then the function navSlide is ran, which was first created
+  //Then the function navSlide is ran, which was first created
 navSlide();
+}
+
 
 //Guide for code from https://www.youtube.com/watch?v=KcdBOoK3Pfw - Changed variable names, ease in and out speed, CSS sizes changed, different images etc.
 const carouselSlide = document.querySelector('.slideShow'); //Creates a read only variable for the class slideShow
