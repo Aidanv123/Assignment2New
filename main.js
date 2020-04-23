@@ -95,7 +95,7 @@ document.getElementById('clock').innerHTML =
 var t = setTimeout(realTimeClock, 500);
 }
 
-//Hiding a Div
+//Hiding a Div //Code found from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp Was edited 
 //Creates a function within JS called clickHere
 function hiddenButton(clickHere) {
     var hidden = document.getElementById("hiddenDiv");  //Calls for the hiddenDiv element of the portfolio page
