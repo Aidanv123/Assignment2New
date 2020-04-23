@@ -317,3 +317,13 @@ h2 {
     font-size: 20px;
     font-family: Poppins;
 }
+/*Styling the button*/
+.btnHidden{
+    background-color: grey;
+    font-size: 15px;
+    cursor: pointer;
+    margin: auto;
+    border-color: black;
+    border-radius: 20px;
+    font-family: Poppins;
+}
