@@ -64,7 +64,7 @@ carouselSlide.addEventListener('transitionend', ()=>{
         counter = carouselImages.length - counter;
         carouselSlide.style.transform = 'translateX(' +(-size * counter)+ 'px)'; //This ensures that the images stay the same size when they change
     }
-});
+}); //1 Issue being the slider will crash until the page has been reset
 
 //Adding a message function when clicking 'Contact Me'
 function emailMe() { //Calls the function created within the HTML
@@ -93,3 +93,14 @@ document.getElementById('clock').innerHTML =
     hours + "  :  " + minutes + "  :  " + seconds + " " + amPM;
 var t = setTimeout(realTimeClock, 500);
 }
+
+//Hiding a Div
+//Creates a function within JS called clickHere
+function hiddenButton(clickHere) {
+    var hidden = document.getElementById("hiddenDiv");  //Calls for the hiddenDiv element of the portfolio page
+    if (hidden.style.display === "none") { //Compares if hiddenDiv is none
+      hidden.style.display = "block";//If it is then it displays it as a block
+    } else { //Else it will display it as none
+      hidden.style.display = "none";
+    }
+  }

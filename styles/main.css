@@ -296,15 +296,24 @@ h2 {
 }
 
 /*CSS for the clock*/
+/*Setting width and position of the container*/
 .clockContainer{
     width: 100%;
     position: relative;
 }
+/*Setting the style of the clock*/
 #clock{
     width: 100%;
     position: absolute;
     font-size: 25px;
     color: white;
     text-align: center;
+    font-family: Poppins;
+}
+/*Hidden div text style*/
+.hidden{
+    color: black;
+    text-align: center;
+    font-size: 20px;
     font-family: Poppins;
 }
