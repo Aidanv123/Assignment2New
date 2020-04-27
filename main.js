@@ -67,6 +67,8 @@ Slide.addEventListener('transitionend', ()=>{
     }
 }); //1 Issue being the slider will crash until the page has been reset
 
+
+
 //Adding a message function when clicking 'Contact Me'
 function emailMe() { //Calls the function created within the HTML
     alert("Email Recieved") //sends an alert saying "Email Recieved" when the button is clicked
@@ -94,6 +96,9 @@ document.getElementById('clock').innerHTML =
     hours + "  :  " + minutes + "  :  " + seconds + " " + amPM;
 var t = setTimeout(realTimeClock, 500);
 }
+
+
+
 
 //Hiding a Div //Code found from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp Was edited 
 //Creates a function within JS called clickHere
