@@ -68,7 +68,7 @@ li a:hover {
 }
 @media screen and (max-width:768px){ /* When its at this size it displays the hamburger navigation along with the other tweaks to the navigation e.g. opacity - found on all pages*/
     .navigationLinks{
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 92vh;
         top: 8vh;
@@ -303,7 +303,7 @@ h2 {
 /*Setting the style of the clock*/
 #clock{
     width: 100%;
-    position: absolute;
+    position: fixed;
     font-size: 25px;
     color: white;
     text-align: center;
