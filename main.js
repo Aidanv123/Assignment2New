@@ -1,6 +1,7 @@
+//HAMBURGER NAVIGATION
 //Hamburger Navigation code from https://www.youtube.com/watch?v=gXkqy0b4M5g - Also for main.css navigation code.
-//Creating a function called navSlide
-function navSlide(){
+//Creating a function called navHam
+function navHam(){
     //creates a read only variable called burger, which links to the .burgernav
     const burger = document.querySelector('.burgernav');
     //creates a read only variable called nav, which links to the .navigationLinks
@@ -24,10 +25,10 @@ function navSlide(){
 });
 
 }
-  //Then the function navSlide is ran, which was first created
-  navSlide();
+  //Then the function navHam is ran, which was first created
+  navHam();
 
-
+//SLIDESHOW
 //Guide for code from https://www.youtube.com/watch?v=KcdBOoK3Pfw - Changed variable names, ease in and out speed, CSS sizes changed, different images etc.
 const Slide = document.querySelector('.slideShow'); //Creates a read only variable for the class slideShow
 const Images = document.querySelectorAll('.slideShow img');//Creates a read only variable for the images within class Slideshow
