@@ -2,14 +2,14 @@
 //Hamburger Navigation code from https://www.youtube.com/watch?v=gXkqy0b4M5g - Also for main.css navigation code.
 //Creating a function called navHam
 function navHam(){
-    //creates a read only variable called burger, which links to the .burgernav
-    const burger = document.querySelector('.burgernav');
-    //creates a read only variable called nav, which links to the .navigationLinks
-    const nav = document.querySelector('.navigationLinks');
-    //creates a read only variable called navLinks, which links to the .navigationLinks images
-    const navLinks = document.querySelectorAll('.navigationLinks li');
+    //creates a let variable called burger, which links to the .burgernav
+    let burger = document.querySelector('.burgernav');
+    //creates a let variable called nav, which links to the .navigationLinks
+    let nav = document.querySelector('.navigationLinks');
+    //creates a let variable called navLinks, which links to the .navigationLinks images
+    let navLinks = document.querySelectorAll('.navigationLinks li');
 
-    // Toggles the const nav when clicked
+    
     burger.addEventListener('click',()=>{
         nav.classList.toggle('nav-active');
     //Animate links //For each link we run a function, which is why we have used querySelectorAll on line 9, to use all images
@@ -30,15 +30,15 @@ function navHam(){
 
 //SLIDESHOW
 //Guide for code from https://www.youtube.com/watch?v=KcdBOoK3Pfw - Changed variable names, ease in and out speed, CSS sizes changed, different images etc.
-const Slide = document.querySelector('.slideShow'); //Creates a read only variable for the class slideShow
-const Images = document.querySelectorAll('.slideShow img');//Creates a read only variable for the images within class Slideshow
+let Slide = document.querySelector('.slideShow'); //Creates a let variable for the class slideShow
+let Images = document.querySelectorAll('.slideShow img');//Creates a let variable for the images within class Slideshow
 //Buttons
-const prevBtn = document.querySelector('#prevBtn'); //Creates a read only variable for the prevBtn
-const nextBtn = document.querySelector('#nextBtn'); //Creates a read only variable for the nextBtn
+let prevBtn = document.querySelector('#prevBtn'); //Creates a let variable for the prevBtn
+let nextBtn = document.querySelector('#nextBtn'); //Creates a let variable for the nextBtn
 
 //Counter
 let counter = 1; 
-const size = Images[0].clientWidth; 
+let size = Images[0].clientWidth; 
 Slide.style.transform = 'translateX(' +(-size * counter)+'px)'; //This ensures that the images stay the same size when they change
 
 //Button Listeners

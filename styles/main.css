@@ -54,7 +54,7 @@ li a:hover {
     width: 25px;
     height: 2px;
     background-color: rgb(0, 0, 0);
-    margin: 5px
+    margin: 5px;
     
 }
 /* Adding media Queries for the burger for mobile view to make it responsive - found on all pages*/
