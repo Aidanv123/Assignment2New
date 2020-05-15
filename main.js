@@ -79,13 +79,13 @@ function emailMe() { //Calls the function created within the HTML
 //Code is from https://www.youtube.com/watch?v=C2CrBlGvbEM - Changed variable names and size of text etc.
 //Creating the variables
 function realTimeClock(){
-    var rtClock = new Date();
-    var hours = rtClock.getHours();
-    var minutes = rtClock.getMinutes();
-    var seconds = rtClock.getSeconds();
+    let rtClock = new Date();
+    let hours = rtClock.getHours();
+    let minutes = rtClock.getMinutes();
+    let seconds = rtClock.getSeconds();
 
 //Adding AM and PM system
-var amPM = (hours < 12) ? "AM" : "PM";
+let amPM = (hours < 12) ? "AM" : "PM";
 //Convert the hours component to a 12hr format
 hours = (hours > 12) ? hours - 12 : hours;
 //Padding the hours, minutes and seconds with leading zeros
@@ -95,7 +95,7 @@ seconds = ("0" + seconds).slice(-2);
 //Display the clock
 document.getElementById('clock').innerHTML =
     hours + "  :  " + minutes + "  :  " + seconds + " " + amPM;
-var t = setTimeout(realTimeClock, 500);
+let t = setTimeout(realTimeClock, 500);
 }
 
 
@@ -104,7 +104,7 @@ var t = setTimeout(realTimeClock, 500);
 //Hiding a Div //Code found from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp Was edited 
 //Creates a function within JS called clickHere
 function hiddenButton(clickHere) {
-    var hidden = document.getElementById("hiddenDiv");  //Calls for the hiddenDiv element of the portfolio page
+    let hidden = document.getElementById("hiddenDiv");  //Calls for the hiddenDiv element of the portfolio page
     if (hidden.style.display === "none") { //Compares if hiddenDiv is none
       hidden.style.display = "block";//If it is then it displays it as a block
     } else { //Else it will display it as none
