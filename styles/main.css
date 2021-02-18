@@ -1,4 +1,5 @@
-body{/*Basic css for the body variable, found on all pages*/
+body {
+    /*Basic css for the body variable, found on all pages*/
     padding: 0;
     margin: 0px;
     background-color: grey;
@@ -6,36 +7,42 @@ body{/*Basic css for the body variable, found on all pages*/
     box-sizing: border-box;
 }
 
-nav{ /*CSS for the navigation container, found on all pages*/
+nav {
+    /*CSS for the navigation container, found on all pages*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     background-color: grey;
-    font-family:'Aldrich', sans-serif;
+    font-family: 'Aldrich', sans-serif;
 }
+
 /*Setting the text to have letter spacing, uppercase and have a fontsize*/
-.logo{
-    color: rgb(226,226,226);
+.logo {
+    color: rgb(226, 226, 226);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
 }
+
 /*The CSS for the links themselves - found on all pages*/
-.navigationLinks{
+.navigationLinks {
     display: flex;
     justify-content: space-around;
     z-index: 1;
     width: 30%;
 }
+
 /*Removes the bullet points from the navigation - found on all pages*/
-.navigationLinks li{
+.navigationLinks li {
     list-style: none;
 }
+
 /*Setting a hover colour to blue when links are hovered over - found on all pages*/
 li a:hover {
     color: blue;
 }
+
 /*setting the css for the text of the links, sets there colour, letter spacing and font size and weight - found on all pages*/
 .navigationLinks a {
     color: rgb(0, 0, 0);
@@ -44,30 +51,39 @@ li a:hover {
     font-weight: bold;
     font-size: 20px;
 }
+
 /*Not displaying burger on desktop view - found on all pages*/
 .burgernav {
     display: none;
     cursor: pointer;
 }
+
 /*Setting size for the burger - found on all pages*/
-.burgernav div{
+.burgernav div {
     width: 25px;
     height: 2px;
     background-color: rgb(0, 0, 0);
     margin: 5px;
-    
+
 }
+
 /* Adding media Queries for the burger for mobile view to make it responsive - found on all pages*/
-@media screen and (max-width:1024px){ /*when its at this size, it hides the burger but displays the normal links*/
-    body{
+@media screen and (max-width:1024px) {
+
+    /*when its at this size, it hides the burger but displays the normal links*/
+    body {
         overflow-x: hidden;
     }
-    .navigationLinks{
+
+    .navigationLinks {
         width: 60px;
     }
 }
-@media screen and (max-width:768px){ /* When its at this size it displays the hamburger navigation along with the other tweaks to the navigation e.g. opacity - found on all pages*/
-    .navigationLinks{
+
+@media screen and (max-width:768px) {
+
+    /* When its at this size it displays the hamburger navigation along with the other tweaks to the navigation e.g. opacity - found on all pages*/
+    .navigationLinks {
         position: fixed;
         right: 0px;
         height: 92vh;
@@ -80,39 +96,48 @@ li a:hover {
         transform: translateX(100%);
         transition: transform 0.25s ease-in;
     }
-    .navigationLinks li{
+
+    .navigationLinks li {
         opacity: 1;
     }
-    .burgernav{
+
+    .burgernav {
         display: block;
     }
 }
-.nav-active{
+
+.nav-active {
     transform: translateX(0%);
 }
+
 /*Each link fades in slowly, from opacity 0 (Not visible) to opacity 1 (visable)*/
-@keyframes navLinkFade{
+@keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
+
 /*Setting the rotation of the burger lines when the burger is clicked - found on all pages*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+
+.toggle .line2 {
     opacity: 0;
 }
-.toggle .line3{
+
+.toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
 /*CSS for the Content on index page*/
-.content-index{
+.content-index {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -120,15 +145,17 @@ li a:hover {
     margin-bottom: 20px;
     font-family: Poppins;
 }
-.content-index .p1{
+
+.content-index .p1 {
     text-align: center;
     font-size: 15px;
     margin-top: auto;
     margin-bottom: auto;
     font-family: Poppins;
 }
+
 /*CSS For the content on the portfolio Page*/
-.content-portfolio{
+.content-portfolio {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -142,35 +169,38 @@ footer {
     text-align: center;
     padding: 0 40px 40px 40px;
 }
+
 /*css for images on index page*/
-.imgindex{
-overflow: hidden;
-border-style: none;
+.imgindex {
+    overflow: hidden;
+    border-style: none;
 
 }
 
 /* My code */
 /*Creating a grayscale feature when images are hovered over*/
-.imgindex:hover{
-filter: grayscale(1);
-transition: background-size 0.3s ease;
+.imgindex:hover {
+    filter: grayscale(1);
+    transition: background-size 0.3s ease;
 }
-.imgsocial:hover{
-filter: grayscale(1);
-transition: background-size 0.3s ease;
+
+.imgsocial:hover {
+    filter: grayscale(1);
+    transition: background-size 0.3s ease;
 }
 
 /*SlideShow CSS*/
 /*Setting the size of the slideShow container - Index Page*/
-.slideShow-container{
+.slideShow-container {
     position: relative;
     width: 42%;
     margin: auto;
     border: 5px solid black;
     overflow: hidden;
 }
+
 /*Setting the size of the slideshow itself - Index Page*/
-.slideShow{
+.slideShow {
     display: flex;
     width: 100%;
     height: 500px;
@@ -180,8 +210,9 @@ transition: background-size 0.3s ease;
 .content-portfolio {
     padding-bottom: 40px;
 }
+
 /*Setting the text size for the gallery-items - Portfolio Page*/
-.gallery-item .h1{
+.gallery-item .h1 {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -189,48 +220,57 @@ transition: background-size 0.3s ease;
     margin-bottom: 20px;
     font-family: Poppins;
 }
+
 /*Setting the size of the gallery container - Portfolio page*/
-.gallery-container  {
+.gallery-container {
     margin: 20px auto;
-    width:400px;
-    height:400px;
-    display:grid;
+    width: 400px;
+    height: 400px;
+    display: grid;
     grid-template-columns: 200px 200px;
     grid-row: auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
+
 /*Setting the size for the actual gallery items -Portfolio Page*/
-.gallery-item{
+.gallery-item {
     position: relative;
     max-width: 100%;
     border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: all .3s;
-    
+
 }
+
 /*Setting hover features for the gallery items, includes box shadow, grayscale etc. - Portfolio Page*/
 .gallery-item.hover .image {
     filter: grayscale(1);
-} 
+}
+
 .gallery-item:hover .middle {
     opacity: 1;
 }
-.gallery-item:hover{
+
+.gallery-item:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8)
 }
-img.profile-pic{
+
+img.profile-pic {
     width: 100%;
 }
+
 img.profile-pic {
-    border-radius: 20px; /* Code from https://ianrmedia.unl.edu/resources/rounded-corners-image, slightly modified */
+    border-radius: 20px;
+    /* Code from https://ianrmedia.unl.edu/resources/rounded-corners-image, slightly modified */
     width: auto;
 }
+
 /*CV page CSS*/
 /*Setting the text size, font and colours on the CV page*/
 h2 {
     font-family: 'Poppins';
-    font-size: 50px; 
+    font-size: 50px;
     overflow: hidden;
     color: black;
     text-align: center;
@@ -239,9 +279,10 @@ h2 {
 .container {
     display: flex;
 }
+
 /*Setting the text size, font and colours on the CV page*/
-.container h3  {
-    margin: 0;    
+.container h3 {
+    margin: 0;
     padding: 40px;
     width: 30%;
     min-width: 300px;
@@ -251,6 +292,7 @@ h2 {
     text-align: center;
     font-family: Poppins;
 }
+
 /*Setting the text size, font and colours on the CV page*/
 .container h4 {
     margin: 0;
@@ -262,16 +304,18 @@ h2 {
     text-align: justify;
     font-family: Poppins;
 }
+
 /*Setting the text size, font and colours on the CV page*/
 .container h4 p {
     margin: 0;
     font-family: Poppins;
 }
+
 /*Contact Page CSS*/
 /*Setting the container CSS styles - Contact page*/
 .contact-content {
     font-family: 'Poppins';
-    font-size: 25px; 
+    font-size: 25px;
     overflow: hidden;
     color: black;
     text-align: center;
@@ -281,27 +325,30 @@ h2 {
     text-align: center;
     padding: 0 40px 40px 40px;
 }
+
 /*aligning everything within a div to the center -Contact page*/
 .contact-content div {
     text-align: center;
     max-width: 750px;
     display: inline-block;
 }
+
 /*Setting the size for all <p> related text - contact page*/
 .contact-content p {
     font-size: 15px;
     text-align: justify;
-    text-align:center;
+    text-align: center;
 }
 
 /*CSS for the clock*/
 /*Setting width and position of the container*/
-.clockContainer{
+.clockContainer {
     width: 100%;
     position: relative;
 }
+
 /*Setting the style of the clock*/
-#clock{
+#clock {
     width: 100%;
     position: fixed;
     font-size: 25px;
@@ -309,15 +356,17 @@ h2 {
     text-align: center;
     font-family: Poppins;
 }
+
 /*Hidden div text style*/
-.hidden{
+.hidden {
     color: black;
     text-align: center;
     font-size: 20px;
     font-family: Poppins;
 }
+
 /*Styling the button*/
-.btnHidden{
+.btnHidden {
     background-color: grey;
     font-size: 15px;
     cursor: pointer;
